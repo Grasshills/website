@@ -3,36 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Grasshills Consulting — Independent technical expertise for complex infrastructure projects. Engineering, Project Management, Claims, and AI & Data Intelligence." />
-  <title>Grasshills Consulting</title>
+  <meta name="description" content="Grasshills Consulting — Independent technical expertise for complex infrastructure projects. Engineering, Project Management, Claims, AI & Data Intelligence." />
+  <title>Grasshills Consulting — Engineering Trust. Delivering Results.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- ═══════════════════════════════ NAV ═══════════════════════════════ -->
+  <!-- NAV -->
   <nav id="navbar">
     <div class="nav-inner">
       <a href="#hero" class="nav-logo">
-        <img src="assets/logo/logo-white.png" alt="Grasshills" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
-        <span class="logo-text-fallback">
-          <span class="logo-g">G</span>rasshills
-        </span>
+        <img src="assets/logo/logo.png" alt="Grasshills" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+        <span class="logo-fb"><span class="logo-g">G</span>rasshills</span>
       </a>
-
       <ul class="nav-links">
-        <li><a href="#about"    data-i18n="nav.about">About</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
         <li><a href="#services" data-i18n="nav.services">Services</a></li>
-        <li><a href="#why-us"   data-i18n="nav.whyUs">Why Us</a></li>
-        <li><a href="#team"     data-i18n="nav.team">Team</a></li>
-        <li><a href="#contact"  data-i18n="nav.contact">Contact</a></li>
+        <li><a href="#why-us" data-i18n="nav.whyUs">Why Us</a></li>
+        <li><a href="#team" data-i18n="nav.team">Team</a></li>
+        <li><a href="#contact" class="nav-cta" data-i18n="nav.contact">Contact</a></li>
       </ul>
-
       <div class="nav-right">
-        <div class="lang-switcher" id="langSwitcher">
-          <button class="lang-current" id="langBtn">EN <span class="lang-arrow">▾</span></button>
-          <ul class="lang-dropdown" id="langDropdown">
+        <div class="lang-sw" id="langSwitcher">
+          <button class="lang-btn" id="langBtn">EN <svg width="10" height="6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+          <ul class="lang-dd" id="langDropdown">
             <li data-lang="en">English</li>
             <li data-lang="fr">Français</li>
             <li data-lang="es">Español</li>
@@ -40,262 +36,134 @@
             <li data-lang="zh">中文</li>
           </ul>
         </div>
-        <button class="nav-burger" id="navBurger" aria-label="Menu">
-          <span></span><span></span><span></span>
-        </button>
+        <button class="burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
       </div>
     </div>
-
-    <!-- Mobile menu -->
-    <div class="nav-mobile" id="navMobile">
-      <ul>
-        <li><a href="#about"    data-i18n="nav.about"    data-mobile>About</a></li>
-        <li><a href="#services" data-i18n="nav.services" data-mobile>Services</a></li>
-        <li><a href="#why-us"   data-i18n="nav.whyUs"   data-mobile>Why Us</a></li>
-        <li><a href="#team"     data-i18n="nav.team"     data-mobile>Team</a></li>
-        <li><a href="#contact"  data-i18n="nav.contact"  data-mobile>Contact</a></li>
-      </ul>
+    <div class="nav-mob" id="navMobile">
+      <a href="#about" data-i18n="nav.about" data-mobile>About</a>
+      <a href="#services" data-i18n="nav.services" data-mobile>Services</a>
+      <a href="#why-us" data-i18n="nav.whyUs" data-mobile>Why Us</a>
+      <a href="#team" data-i18n="nav.team" data-mobile>Team</a>
+      <a href="#contact" data-i18n="nav.contact" data-mobile>Contact</a>
     </div>
   </nav>
 
-  <!-- ═══════════════════════════════ HERO ══════════════════════════════ -->
+  <!-- HERO -->
   <section id="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-grid"></div>
-    <div class="hero-content">
-      <div class="hero-label" data-i18n="hero.label">Independent Consulting Firm</div>
-      <h1 class="hero-title">
-        <span class="line" data-i18n="hero.tagline1">Engineering Trust.</span>
-        <span class="line accent" data-i18n="hero.tagline2">Delivering Results.</span>
-      </h1>
-      <p class="hero-sub" data-i18n="hero.sub">
-        Independent technical expertise for complex infrastructure projects —<br />
-        AI-augmented, internationally standardised, Africa-rooted.
-      </p>
-      <div class="hero-ctas">
-        <a href="#services" class="btn btn-primary" data-i18n="hero.cta">Explore Our Services</a>
-        <a href="#contact"  class="btn btn-ghost"   data-i18n="hero.ctaContact">Get in Touch</a>
+    <div class="hero-accent"></div>
+    <div class="container hero-wrap">
+      <div class="hero-text">
+        <span class="tag-line anim-up" data-i18n="hero.label">Independent Consulting Firm</span>
+        <h1 class="anim-up d1">
+          <span data-i18n="hero.tagline1">Engineering Trust.</span><br/>
+          <em data-i18n="hero.tagline2">Delivering Results.</em>
+        </h1>
+        <p class="hero-p anim-up d2" data-i18n="hero.sub">Independent technical expertise for complex infrastructure projects — AI-augmented, internationally standardised, Africa-rooted.</p>
+        <div class="hero-btns anim-up d3">
+          <a href="#services" class="btn btn-fill" data-i18n="hero.cta">Explore Our Services</a>
+          <a href="#contact" class="btn btn-line" data-i18n="hero.ctaContact">Get in Touch</a>
+        </div>
       </div>
-      <div class="hero-tags">
-        <span data-i18n="hero.tag1">Engineering</span>
-        <span data-i18n="hero.tag2">Project Management</span>
-        <span data-i18n="hero.tag3">Claims & Forensics</span>
-        <span data-i18n="hero.tag4">AI & Data</span>
+      <div class="hero-pillars anim-up d2">
+        <div class="hp hp-1"><span class="hp-n">01</span><span data-i18n="hero.tag1">Engineering</span></div>
+        <div class="hp hp-2"><span class="hp-n">02</span><span data-i18n="hero.tag2">Project Management</span></div>
+        <div class="hp hp-3"><span class="hp-n">03</span><span data-i18n="hero.tag3">Claims & Forensics</span></div>
+        <div class="hp hp-4"><span class="hp-n">04</span><span data-i18n="hero.tag4">AI & Data</span></div>
       </div>
     </div>
-    <a href="#about" class="hero-scroll" aria-label="Scroll down">
-      <span class="scroll-line"></span>
-    </a>
   </section>
 
-  <!-- ══════════════════════════════ ABOUT ══════════════════════════════ -->
-  <section id="about">
+  <!-- ABOUT -->
+  <section id="about" class="sec-light">
     <div class="container">
-      <div class="section-header">
-        <span class="section-label" data-i18n="about.label">About Us</span>
-        <h2 data-i18n="about.title">A New Kind of Technical Partner</h2>
-      </div>
-
-      <div class="about-intro">
-        <p data-i18n="about.intro">
-          Grasshills is an independent advisory firm specialising in complex project engineering,
-          construction management, forensic delay analysis, and AI & data intelligence. We serve
-          project owners, financial institutions, and EPC contractors who need a trusted,
-          independent technical voice — delivered with international rigour and African field depth.
-        </p>
-      </div>
-
-      <div class="about-cards">
-        <div class="about-card">
-          <div class="card-icon">◈</div>
+      <div class="sec-head reveal"><span class="label" data-i18n="about.label">About Us</span><h2 data-i18n="about.title">A New Kind of Technical Partner</h2></div>
+      <p class="lead reveal" data-i18n="about.intro">Grasshills is an independent advisory firm specialising in complex project engineering, construction management, forensic delay analysis, and AI & data intelligence. We serve project owners, financial institutions, and EPC contractors who need a trusted, independent technical voice — delivered with international rigour and African field depth.</p>
+      <div class="tri reveal">
+        <article class="tri-c">
           <h3 data-i18n="about.missionTitle">Our Mission</h3>
-          <p data-i18n="about.missionText">
-            To provide pragmatic, independent technical expertise that bridges the gap in experienced
-            project management resources — guaranteeing transparency, cost control, and schedule
-            performance for project owners and financiers.
-          </p>
-        </div>
-        <div class="about-card">
-          <div class="card-icon">◎</div>
+          <p data-i18n="about.missionText">To provide pragmatic, independent technical expertise that bridges the gap in experienced project management resources — guaranteeing transparency, cost control, and schedule performance for project owners and financiers.</p>
+        </article>
+        <article class="tri-c">
           <h3 data-i18n="about.visionTitle">Our Vision</h3>
-          <p>
-            <strong data-i18n="about.vision5yLabel">5 years:</strong>
-            <span data-i18n="about.vision5y"> Become a reference firm, recognised for technical impact and analytical rigour.</span>
-          </p>
-          <p>
-            <strong data-i18n="about.vision10yLabel">10 years:</strong>
-            <span data-i18n="about.vision10y"> Evolve into an integrated engineering firm capable of full design and delivery, on par with global leaders.</span>
-          </p>
-        </div>
-        <div class="about-card about-card-wide">
-          <div class="card-icon">◇</div>
+          <p><strong data-i18n="about.vision5yLabel">5 years:</strong><span data-i18n="about.vision5y"> Become a reference firm, recognised for technical impact and analytical rigour.</span></p>
+          <p style="margin-top:.75rem"><strong data-i18n="about.vision10yLabel">10 years:</strong><span data-i18n="about.vision10y"> Evolve into an integrated engineering firm capable of full design and delivery, on par with global leaders.</span></p>
+        </article>
+        <article class="tri-c">
           <h3 data-i18n="about.positioningTitle">Our Positioning</h3>
-          <ul class="positioning-list">
+          <ul class="ck">
             <li data-i18n="about.diff1">Independent expertise, results-oriented</li>
             <li data-i18n="about.diff2">Integrated approach: technical, contractual & data</li>
             <li data-i18n="about.diff3">Long-term investment vision</li>
             <li data-i18n="about.diff4">Mastery of complex projects in the African context</li>
             <li data-i18n="about.diff5">International standards applied locally</li>
           </ul>
-        </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- ════════════════════════════ SERVICES ═════════════════════════════ -->
+  <!-- SERVICES -->
   <section id="services">
     <div class="container">
-      <div class="section-header">
-        <span class="section-label" data-i18n="services.label">What We Do</span>
-        <h2 data-i18n="services.title">Two Pillars. One Firm.</h2>
+      <div class="sec-head reveal"><span class="label" data-i18n="services.label">What We Do</span><h2 data-i18n="services.title">Two Pillars. One Firm.</h2></div>
+
+      <div class="pillar reveal">
+        <div class="p-head"><div class="p-num">01</div><div><h3 data-i18n="services.pillar1">Engineering & Project Consulting</h3><p class="p-sub" data-i18n="services.pillar1Sub">Construction · Infrastructure · EPC</p></div></div>
+        <div class="sg">
+          <div class="sc reveal"><span class="sc-n">1.1</span><h4 data-i18n="services.s1Title">Project Planning & Controls</h4><p data-i18n="services.s1Desc">End-to-end scheduling (CPM, baselines, milestones), progress tracking, and delay risk identification for complex construction projects.</p></div>
+          <div class="sc reveal"><span class="sc-n">1.2</span><h4 data-i18n="services.s2Title">Contract & Delay Claims</h4><p data-i18n="services.s2Desc">Contractual advisory (FIDIC, GCC), forensic delay analysis, dispute resolution support and claims preparation for project owners and lenders.</p></div>
+          <div class="sc reveal"><span class="sc-n">1.3</span><h4 data-i18n="services.s3Title">Project & Engineering Management</h4><p data-i18n="services.s3Desc">Full lifecycle project oversight — construction management, cost control, risk planning, and engineering advisory from concept to handover.</p></div>
+          <div class="sc reveal"><span class="sc-n">1.4</span><h4 data-i18n="services.s4Title">Data Engineering & Reporting</h4><p data-i18n="services.s4Desc">Structuring and valorising project data assets. Custom KPI dashboards, performance reporting, and data-driven decision support.</p></div>
+          <div class="sc reveal"><span class="sc-n">1.5</span><h4 data-i18n="services.s5Title">Professional Training</h4><p data-i18n="services.s5Desc">Practical training in MS Project, project management, and engineering management for technical teams in construction and infrastructure.</p></div>
+        </div>
       </div>
 
-      <div class="pillars">
-
-        <!-- Pillar 1: Engineering -->
-        <div class="pillar">
-          <div class="pillar-header pillar-eng">
-            <div class="pillar-number">01</div>
-            <div>
-              <h3 data-i18n="services.pillar1">Engineering & Project Consulting</h3>
-              <p data-i18n="services.pillar1Sub">Construction · Infrastructure · EPC</p>
-            </div>
-          </div>
-          <div class="service-grid">
-            <div class="service-card">
-              <div class="service-num">1.1</div>
-              <h4 data-i18n="services.s1Title">Project Planning & Controls</h4>
-              <p data-i18n="services.s1Desc">End-to-end scheduling (CPM, baselines, milestones), progress tracking, and delay risk identification for complex construction projects.</p>
-            </div>
-            <div class="service-card">
-              <div class="service-num">1.2</div>
-              <h4 data-i18n="services.s2Title">Contract & Delay Claims</h4>
-              <p data-i18n="services.s2Desc">Contractual advisory (FIDIC, GCC), forensic delay analysis, dispute resolution support and claims preparation for project owners and lenders.</p>
-            </div>
-            <div class="service-card">
-              <div class="service-num">1.3</div>
-              <h4 data-i18n="services.s3Title">Project & Engineering Management</h4>
-              <p data-i18n="services.s3Desc">Full lifecycle project oversight — construction management, cost control, risk planning, and engineering advisory from concept to handover.</p>
-            </div>
-            <div class="service-card">
-              <div class="service-num">1.4</div>
-              <h4 data-i18n="services.s4Title">Data Engineering & Reporting</h4>
-              <p data-i18n="services.s4Desc">Structuring and valorising project data assets. Custom KPI dashboards, performance reporting, and data-driven decision support.</p>
-            </div>
-            <div class="service-card">
-              <div class="service-num">1.5</div>
-              <h4 data-i18n="services.s5Title">Professional Training</h4>
-              <p data-i18n="services.s5Desc">Practical training in MS Project, project management, and engineering management for technical teams in construction and infrastructure.</p>
-            </div>
-          </div>
+      <div class="pillar pillar-ai reveal">
+        <div class="p-head p-head-ai"><div class="p-num">02</div><div><h3 data-i18n="services.pillar2">AI & Data Intelligence</h3><p class="p-sub" data-i18n="services.pillar2Sub">Custom Models · Datasets · Strategy</p></div></div>
+        <div class="sg">
+          <div class="sc sc-ai reveal"><span class="sc-n sc-n-ai">2.1</span><h4 data-i18n="services.ai1Title">Custom Model Development</h4><p data-i18n="services.ai1Desc">End-to-end development of ML and deep learning models tailored to your problem — from architecture design to training, evaluation, and deployment.</p></div>
+          <div class="sc sc-ai reveal"><span class="sc-n sc-n-ai">2.2</span><h4 data-i18n="services.ai2Title">Synthetic Data Generation</h4><p data-i18n="services.ai2Desc">Design and production of synthetic datasets for training AI models where real data is scarce, sensitive, or costly. Our core technical differentiator.</p></div>
+          <div class="sc sc-ai reveal"><span class="sc-n sc-n-ai">2.3</span><h4 data-i18n="services.ai3Title">Dataset Engineering</h4><p data-i18n="services.ai3Desc">Dataset design, annotation strategy, quality control, and augmentation pipelines — built for model performance and long-term maintainability.</p></div>
+          <div class="sc sc-ai reveal"><span class="sc-n sc-n-ai">2.4</span><h4 data-i18n="services.ai4Title">Computer Vision Solutions</h4><p data-i18n="services.ai4Desc">Object detection, classification, and visual inspection systems for industrial and operational environments. From prototype to production.</p></div>
+          <div class="sc sc-ai reveal"><span class="sc-n sc-n-ai">2.5</span><h4 data-i18n="services.ai5Title">AI Strategy & Digital Readiness</h4><p data-i18n="services.ai5Desc">Helping organisations understand what AI can realistically deliver, where to invest, and how to structure data and workflows to get there.</p></div>
         </div>
-
-        <!-- Pillar 2: AI -->
-        <div class="pillar pillar-ai-block">
-          <div class="pillar-header pillar-ai">
-            <div class="pillar-number">02</div>
-            <div>
-              <h3 data-i18n="services.pillar2">AI & Data Intelligence</h3>
-              <p data-i18n="services.pillar2Sub">Custom Models · Datasets · Strategy</p>
-            </div>
-          </div>
-          <div class="service-grid">
-            <div class="service-card service-card-ai">
-              <div class="service-num">2.1</div>
-              <h4 data-i18n="services.ai1Title">Custom Model Development</h4>
-              <p data-i18n="services.ai1Desc">End-to-end development of ML and deep learning models tailored to your problem — from architecture design to training, evaluation, and deployment.</p>
-            </div>
-            <div class="service-card service-card-ai">
-              <div class="service-num">2.2</div>
-              <h4 data-i18n="services.ai2Title">Synthetic Data Generation</h4>
-              <p data-i18n="services.ai2Desc">Design and production of synthetic datasets for training AI models where real data is scarce, sensitive, or costly. Our core technical differentiator.</p>
-            </div>
-            <div class="service-card service-card-ai">
-              <div class="service-num">2.3</div>
-              <h4 data-i18n="services.ai3Title">Dataset Engineering</h4>
-              <p data-i18n="services.ai3Desc">Dataset design, annotation strategy, quality control, and augmentation pipelines — built for model performance and long-term maintainability.</p>
-            </div>
-            <div class="service-card service-card-ai">
-              <div class="service-num">2.4</div>
-              <h4 data-i18n="services.ai4Title">Computer Vision Solutions</h4>
-              <p data-i18n="services.ai4Desc">Object detection, classification, and visual inspection systems for industrial and operational environments. From prototype to production.</p>
-            </div>
-            <div class="service-card service-card-ai">
-              <div class="service-num">2.5</div>
-              <h4 data-i18n="services.ai5Title">AI Strategy & Digital Readiness</h4>
-              <p data-i18n="services.ai5Desc">Helping organisations understand what AI can realistically deliver, where to invest, and how to structure data and workflows to get there.</p>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════ WHY US ════════════════════════════════ -->
+  <!-- WHY US — dark -->
   <section id="why-us">
     <div class="container">
-      <div class="section-header">
-        <span class="section-label" data-i18n="whyUs.label">Our Edge</span>
-        <h2 data-i18n="whyUs.title">What Sets Us Apart</h2>
-      </div>
-      <div class="why-grid">
-        <div class="why-card">
-          <div class="why-icon">⊕</div>
-          <h4 data-i18n="whyUs.w1Title">Truly Independent</h4>
-          <p data-i18n="whyUs.w1Desc">No vendor allegiance. No conflict of interest. Our only obligation is to the technical truth and our client's best interests.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">⚡</div>
-          <h4 data-i18n="whyUs.w2Title">AI-Augmented Delivery</h4>
-          <p data-i18n="whyUs.w2Desc">We leverage AI agents and automation internally to deliver faster, more thorough analyses — at a fraction of traditional consulting cost.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">◈</div>
-          <h4 data-i18n="whyUs.w3Title">Cross-Domain Expertise</h4>
-          <p data-i18n="whyUs.w3Desc">Engineering operations, project management, and artificial intelligence — rarely found in one firm. We bridge disciplines others keep separate.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">◎</div>
-          <h4 data-i18n="whyUs.w4Title">African Context Mastery</h4>
-          <p data-i18n="whyUs.w4Desc">We have operated plants, managed projects, and delivered engineering across Congo, Mali, Ghana, Nigeria, Morocco, and South Africa. We know the terrain.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">▲</div>
-          <h4 data-i18n="whyUs.w5Title">International Standards</h4>
-          <p data-i18n="whyUs.w5Desc">PMI, FIDIC, GCC, CPM scheduling, ISO frameworks — applied with rigour in constrained environments where they matter most.</p>
-        </div>
+      <div class="sec-head reveal"><span class="label label-w" data-i18n="whyUs.label">Our Edge</span><h2 data-i18n="whyUs.title">What Sets Us Apart</h2></div>
+      <div class="eg">
+        <div class="ec reveal"><div class="ec-n">01</div><h4 data-i18n="whyUs.w1Title">Truly Independent</h4><p data-i18n="whyUs.w1Desc">No vendor allegiance. No conflict of interest. Our only obligation is to the technical truth and our client's best interests.</p></div>
+        <div class="ec reveal"><div class="ec-n">02</div><h4 data-i18n="whyUs.w2Title">AI-Augmented Delivery</h4><p data-i18n="whyUs.w2Desc">We leverage AI agents and automation internally to deliver faster, more thorough analyses — at a fraction of traditional consulting cost.</p></div>
+        <div class="ec reveal"><div class="ec-n">03</div><h4 data-i18n="whyUs.w3Title">Cross-Domain Expertise</h4><p data-i18n="whyUs.w3Desc">Engineering operations, project management, and artificial intelligence — rarely found in one firm. We bridge disciplines others keep separate.</p></div>
+        <div class="ec reveal"><div class="ec-n">04</div><h4 data-i18n="whyUs.w4Title">African Context Mastery</h4><p data-i18n="whyUs.w4Desc">We have operated plants, managed projects, and delivered engineering across Congo, Mali, Ghana, Nigeria, Morocco, and South Africa. We know the terrain.</p></div>
+        <div class="ec reveal"><div class="ec-n">05</div><h4 data-i18n="whyUs.w5Title">International Standards</h4><p data-i18n="whyUs.w5Desc">PMI, FIDIC, GCC, CPM scheduling, ISO frameworks — applied with rigour in constrained environments where they matter most.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- ════════════════════════════ TEAM ═════════════════════════════════ -->
-  <section id="team">
+  <!-- TEAM -->
+  <section id="team" class="sec-light">
     <div class="container">
-      <div class="section-header">
-        <span class="section-label" data-i18n="team.label">The Team</span>
-        <h2 data-i18n="team.title">Built on Expertise</h2>
-      </div>
-      <div class="team-grid">
-        <div class="team-card">
-          <div class="team-avatar">RF</div>
-          <div class="team-info">
+      <div class="sec-head reveal"><span class="label" data-i18n="team.label">The Team</span><h2 data-i18n="team.title">Built on Expertise</h2></div>
+      <div class="tm reveal">
+        <div class="tc">
+          <div class="ta"><span>RF</span></div>
+          <div class="tb">
             <h3 data-i18n="team.rosaireName">Rosaire Fongang</h3>
-            <span class="team-role" data-i18n="team.rosaireRole">Co-Founder · Engineering & AI</span>
+            <span class="tr" data-i18n="team.rosaireRole">Co-Founder · Engineering & AI</span>
             <p data-i18n="team.rosaireBio">MEng (UCAC-ICAM) · MSc Artificial Intelligence (IU Germany) · 12+ years at Air Liquide across Africa and Europe. Senior Project Engineer, former Country Industrial Manager. Specialises in AI model development, synthetic data generation, and complex industrial project management.</p>
-            <div class="team-tags">
-              <span>Project Engineering</span>
-              <span>AI & Computer Vision</span>
-              <span>Synthetic Data</span>
-              <span>Industrial Operations</span>
-            </div>
+            <div class="chips"><span>Project Engineering</span><span>AI & Computer Vision</span><span>Synthetic Data</span><span>Industrial Operations</span></div>
           </div>
         </div>
-        <div class="team-card">
-          <div class="team-avatar">GH</div>
-          <div class="team-info">
+        <div class="tc">
+          <div class="ta ta-alt"><span>GH</span></div>
+          <div class="tb">
             <h3 data-i18n="team.brotherName">Co-Founder</h3>
-            <span class="team-role" data-i18n="team.brotherRole">Engineering & Project Controls</span>
+            <span class="tr" data-i18n="team.brotherRole">Engineering & Project Controls</span>
             <p data-i18n="team.brotherBio">Profile coming soon.</p>
           </div>
         </div>
@@ -303,60 +171,37 @@
     </div>
   </section>
 
-  <!-- ══════════════════════════ CONTACT ════════════════════════════════ -->
+  <!-- CONTACT -->
   <section id="contact">
     <div class="container">
-      <div class="section-header">
-        <span class="section-label" data-i18n="contact.label">Contact</span>
-        <h2 data-i18n="contact.title">Let's Talk</h2>
-        <p class="contact-sub" data-i18n="contact.sub">Whether you need an independent technical review, a custom AI solution, or a long-term project partner — we're here.</p>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-item">
-          <div class="contact-icon">✉</div>
-          <div>
-            <span class="contact-label" data-i18n="contact.emailLabel">Email</span>
-            <a href="mailto:client@grasshill.com">client@grasshill.com</a>
-          </div>
+      <div class="ct-wrap reveal">
+        <div class="ct-left">
+          <span class="label" data-i18n="contact.label">Contact</span>
+          <h2 data-i18n="contact.title">Let's Talk</h2>
+          <p data-i18n="contact.sub">Whether you need an independent technical review, a custom AI solution, or a long-term project partner — we're here.</p>
+          <a href="mailto:client@grasshill.com" class="btn btn-fill btn-lg" data-i18n="contact.cta">Send us a message</a>
         </div>
-        <div class="contact-item">
-          <div class="contact-icon">✆</div>
-          <div>
-            <span class="contact-label" data-i18n="contact.phoneLabel">Phone</span>
-            <a href="tel:+237673635754">+237 6 73 63 57 54</a>
-          </div>
+        <div class="ct-right">
+          <div class="ci"><span class="cl" data-i18n="contact.emailLabel">Email</span><a href="mailto:client@grasshill.com">client@grasshill.com</a></div>
+          <div class="ci"><span class="cl" data-i18n="contact.phoneLabel">Phone</span><a href="tel:+237673635754">+237 6 73 63 57 54</a></div>
+          <div class="ci"><span class="cl" data-i18n="contact.locationLabel">Locations</span><span data-i18n="contact.locations">Cameroon · Rwanda · South Africa · France</span></div>
         </div>
-        <div class="contact-item">
-          <div class="contact-icon">◉</div>
-          <div>
-            <span class="contact-label" data-i18n="contact.locationLabel">Locations</span>
-            <span data-i18n="contact.locations">Cameroon · Rwanda · South Africa · France</span>
-          </div>
-        </div>
-      </div>
-      <div class="contact-cta">
-        <a href="mailto:client@grasshill.com" class="btn btn-primary" data-i18n="contact.cta">Send us a message</a>
       </div>
     </div>
   </section>
 
-  <!-- ════════════════════════════ FOOTER ═══════════════════════════════ -->
+  <!-- FOOTER -->
   <footer>
-    <div class="container footer-inner">
-      <div class="footer-logo">
-        <span class="logo-text-fallback">
-          <span class="logo-g">G</span>rasshills
-        </span>
-        <p data-i18n="footer.tagline">Engineering Trust. Delivering Results.</p>
-      </div>
-      <div class="footer-links">
-        <a href="#about"    data-i18n="nav.about">About</a>
+    <div class="container ft">
+      <div class="ft-brand"><span class="logo-fb"><span class="logo-g">G</span>rasshills</span><p data-i18n="footer.tagline">Engineering Trust. Delivering Results.</p></div>
+      <nav class="ft-nav">
+        <a href="#about" data-i18n="nav.about">About</a>
         <a href="#services" data-i18n="nav.services">Services</a>
-        <a href="#why-us"   data-i18n="nav.whyUs">Why Us</a>
-        <a href="#team"     data-i18n="nav.team">Team</a>
-        <a href="#contact"  data-i18n="nav.contact">Contact</a>
-      </div>
-      <p class="footer-copy" data-i18n="footer.rights">© 2025 Grasshills Consulting. All rights reserved.</p>
+        <a href="#why-us" data-i18n="nav.whyUs">Why Us</a>
+        <a href="#team" data-i18n="nav.team">Team</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <p class="ft-copy" data-i18n="footer.rights">© 2025 Grasshills Consulting. All rights reserved.</p>
     </div>
   </footer>
 
