@@ -20,7 +20,7 @@ en: {
     stephaneBio:"MEng · PMP® · Certified Forensic Delay Analyst · 16+ years delivering mega-projects across Africa. Former Project Control Manager and Planning Lead for global EPCs (Wood, Eiffage, SOFRECO). Specialises in master scheduling, integrated cost control, FIDIC contract administration, and complex mechanical construction.",
     rosaireName:"Rosaire Fongang",
     rosaireRole:"Co-Founder · Engineering & AI",
-    rosaireBio:"MEng · MSc AI · 12+ years at Air Liquide across Africa and Europe. Engineering Management, former Country Industrial Manager. Specialises in Industrialization, AI solution development, synthetic data generation, and complex industrial project management."
+    rosaireBio:"MEng · MSc AI · 12+ years at Air Liquide across Africa and Europe. Engineering Management, former Country Industrial Manager. Specialises in Industrialization, AI solution development, synthetic data generation, and complex industrial project."
   },
   contact:{label:"Contact",title:"Let's Talk",sub:"Whether you need an independent technical review, a custom AI solution, or a long-term project partner — we're here.",emailLabel:"Email",phoneLabel:"Phone",locationLabel:"Locations",locations:"Cameroon · Rwanda · South Africa · France",cta:"Send us a message"},
   footer:{tagline:"Engineering Trust. Delivering Results.",rights:"© 2026 Grasshills Consulting. All rights reserved."}
